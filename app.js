@@ -9,7 +9,7 @@ const app = express()
 dotenv.config({path: "./config/config.env"});
 
 app.use(cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: ['http://localhost:5173', 'https://deployment-rho-bice.vercel.app', 'https://sontake-nodejs.onrender.com'],
     methods: ["POST"],
     credentials: true,
 }));
